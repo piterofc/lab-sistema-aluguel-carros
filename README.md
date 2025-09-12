@@ -12,86 +12,108 @@ Sistema de Aluguel de Carros.
 ## Instruções de utilização
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
+---
+
 # Histórias de Usuário
 
-Épico 1: Gestão de Pedidos e Contratos
+### Épico 1: Gestão e Configuração (Funcionalidades do Agente)
 
-Este épico descreve como clientes e agentes interagem com os pedidos e contratos de aluguel de automóveis.
+Este épico cobre as tarefas de gerenciamento do sistema, como o cadastro de veículos e usuários, que são realizadas pelos agentes.
 
-US01: Cadastro de Cliente
-Como um Cliente,
-Eu quero realizar meu cadastro no sistema com meus dados pessoais, profissionais e financeiros,
-Para que eu possa acessar as funcionalidades de aluguel de automóveis.
+**US01: Gerenciar Automóveis**
 
-US02: Criar Pedido de Aluguel
-Como um Cliente,
-Eu quero criar um pedido de aluguel de automóvel,
-Para que eu possa iniciar o processo de contratação.
+* **Como um** Agente,  
+* **Eu quero** poder criar, visualizar, editar e remover automóveis no sistema,  
+* **Para que** o portfólio de veículos disponíveis para aluguel esteja sempre atualizado.
 
-US03: Editar Pedido de Aluguel
-Como um Cliente,
-Eu quero editar informações de um pedido já criado,
-Para que eu possa corrigir ou atualizar dados antes da análise pelos agentes.
+**US02: Gerenciar Usuários Clientes**
 
-US04: Consultar Status do Pedido
-Como um Cliente,
-Eu quero consultar o status dos meus pedidos,
-Para que eu saiba se foram aprovados, rejeitados ou executados.
+* **Como um** Agente,  
+* **Eu quero** poder consultar e gerenciar os dados cadastrais dos usuários Clientes,  
+* **Para que** a base de clientes esteja organizada e seja possível dar suporte quando necessário.
 
-US05: Cancelar Pedido de Aluguel
-Como um Cliente,
-Eu quero cancelar um pedido em aberto,
-Para que eu não dê continuidade a um contrato que não desejo mais.
+### Épico 2: Jornada do Cliente
 
-US06: Avaliar Pedido Financeiramente
-Como um Agente (Banco ou Empresa),
-Eu quero avaliar o pedido do cliente do ponto de vista financeiro,
-Para que eu possa aprovar ou rejeitar a solicitação.
+Este épico descreve a jornada completa do cliente, desde o seu primeiro acesso até a gestão de seus pedidos de aluguel.
 
-US07: Modificar Pedido
-Como um Agente,
-Eu quero modificar informações de um pedido,
-Para que ele esteja em conformidade com os critérios de aprovação.
+**US03: Cadastrar-se no Sistema**
 
-US08: Executar Contrato de Aluguel
-Como um Agente,
-Eu quero formalizar um contrato após aprovação,
-Para que a locação do automóvel seja oficializada.
+* **Como um** novo Cliente,  
+* **Eu quero** poder me cadastrar na plataforma fornecendo meus dados pessoais, profissionais e de rendimento,  
+* **Para que** eu possa ser um usuário verificado e apto a solicitar um aluguel.
 
-Épico 2: Gestão de Dados
+**US04: Realizar Login no Sistema**
 
-Este épico descreve como o sistema gerencia informações de clientes e automóveis.
+* **Como um** Usuário (Cliente ou Agente),  
+* **Eu quero** fazer login no sistema usando meu usuário e senha,  
+* **Para que** eu possa acessar as funcionalidades correspondentes ao meu perfil.
 
-US09: Armazenar Dados de Identificação do Cliente
-Como o Sistema,
-Eu quero registrar RG, CPF, nome, endereço, profissão, empregadores e rendimentos do cliente,
-Para que os agentes tenham dados confiáveis para análise de crédito.
+**US05: Introduzir Pedido de Aluguel**
 
-US10: Cadastrar Automóvel
-Como o Sistema,
-Eu quero registrar matrícula, ano, marca, modelo e placa dos automóveis,
-Para que os veículos disponíveis estejam devidamente identificados.
+* **Como um** Cliente,  
+* **Eu quero** poder escolher um automóvel e submeter um novo pedido de aluguel,  
+* **Para que** minha solicitação seja enviada para análise financeira de um agente.
 
-US11: Associar Contrato de Crédito
-Como o Sistema,
-Eu quero vincular o contrato de aluguel a um contrato de crédito concedido por um banco,
-Para que seja possível garantir o controle financeiro do processo.
+**US06: Consultar Meus Pedidos**
 
-Épico 3: Infraestrutura e Acesso
+* **Como um** Cliente,  
+* **Eu quero** visualizar a lista de todos os meus pedidos com seus respectivos status (ex: "Em análise", "Aprovado", "Cancelado"),  
+* **Para que** eu possa acompanhar o andamento das minhas solicitações.
 
-Este épico descreve como usuários acessam o sistema e como ele é estruturado.
+**US07: Modificar Pedido de Aluguel**
 
-US12: Realizar Login no Sistema
-Como um Usuário (Cliente, Agente ou Administrador),
-Eu quero realizar login no sistema com meu usuário e senha,
-Para que eu possa acessar as funcionalidades do meu perfil.
+* **Como um** Cliente,  
+* **Eu quero** poder modificar os dados de um pedido que ainda não foi aprovado,  
+* **Para que** eu possa corrigir ou atualizar informações.
 
-US13: Acessar o Sistema via Internet
-Como um Usuário,
-Eu quero acessar o sistema através da internet,
-Para que eu possa utilizá-lo de forma remota.
+**US08: Cancelar Pedido de Aluguel**
 
-US14: Gerenciar Subsistemas
-Como um Administrador,
-Eu quero que o sistema seja dividido em subsistema de pedidos/contratos e subsistema de páginas web,
-Para que a manutenção e a escalabilidade sejam facilitadas.
+* **Como um** Cliente,  
+* **Eu quero** poder cancelar um pedido de aluguel que fiz,  
+* **Para que** eu possa desistir da solicitação caso mude de ideia.
+
+### Épico 3: Análise de Pedidos (Funcionalidades do Agente)
+
+Este épico foca no fluxo de trabalho do Agente ao receber, analisar e decidir sobre os pedidos de aluguel.
+
+**US09: Avaliar Pedido de Aluguel**
+
+* **Como um** Agente,  
+* **Eu quero** poder visualizar os detalhes de um pedido e os dados financeiros do cliente,  
+* **Para que** eu possa fazer a análise e emitir um parecer (positivo ou negativo).
+
+**US10: Executar Contrato**
+
+* **Como um** Agente,  
+* **Eu quero** poder, a partir de um pedido com parecer positivo, executar o contrato de aluguel,  
+* **Para que** o processo seja formalizado e o veículo seja liberado para o cliente.
+
+**US11: Associar Contrato de Crédito**
+
+* **Como um** Agente (especificamente de um Banco),  
+* **Eu quero** poder associar um contrato de crédito ao aluguel,  
+* **Para que** o cliente possa financiar o veículo através do banco.
+
+### Épico 4: Processos e Notificações (Funcionalidades do Sistema)
+
+Este épico descreve ações realizadas pelo próprio sistema para automatizar tarefas e manter os usuários informados.
+
+**US12: Notificar Cliente sobre Status do Pedido**
+
+* **Como o** Sistema,  
+* **Eu quero** enviar uma notificação por e-mail para o cliente sempre que o status do seu pedido for alterado,  
+* **Para que** o cliente seja informado proativamente sobre o andamento da sua solicitação.
+
+**US13: Alocar Pedido para um Agente**
+
+* **Como o** Sistema,  
+* **Eu quero** atribuir automaticamente um novo pedido de aluguel a um agente disponível,  
+* **Para que** o processo de análise comece o mais rápido possível e a carga de trabalho seja distribuída.
+
+---
+
+# Diagrama de Casos de Uso
+
+<img width="500" alt="Diagrama Csos de Uso Aluguel de Carros" src="https://github.com/user-attachments/assets/86cdd0a8-d752-41a6-b7cc-ef550e69e69e" />
+
+
