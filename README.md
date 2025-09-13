@@ -116,4 +116,9 @@ Este épico descreve ações realizadas pelo próprio sistema para automatizar t
 
 <img width="500" alt="Diagrama Csos de Uso Aluguel de Carros" src="https://github.com/user-attachments/assets/86cdd0a8-d752-41a6-b7cc-ef550e69e69e" />
 
+# Diagrama de classes
+<img width="500" height="853" alt="class trabalho diagram" src="https://github.com/user-attachments/assets/3a2253aa-5929-4b69-9d3f-a072a55b1b45" />
+
+
+
 
