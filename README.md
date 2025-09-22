@@ -114,13 +114,18 @@ Este épico descreve ações realizadas pelo próprio sistema para automatizar t
 
 # Diagrama de Casos de Uso
 
-<img width="500" alt="Diagrama Csos de Uso Aluguel de Carros" src="https://github.com/user-attachments/assets/86cdd0a8-d752-41a6-b7cc-ef550e69e69e" />
+<img width="500" alt="Diagrama Casos de Uso Aluguel" src="https://github.com/user-attachments/assets/2c321e3e-ea67-4ff5-8eb1-937c55afa366" />
 
-# Diagrama de classes
-<img width="500" alt="class trabalho diagram" src="https://github.com/user-attachments/assets/3a2253aa-5929-4b69-9d3f-a072a55b1b45" />
+---
 
-# Diagrama de pacotes
+# Diagrama de Classes
 
-<img width="500" alt="Class Diagram2" src="https://github.com/user-attachments/assets/62857ec5-1a76-49e4-9427-5668080b6768" />
+<img width="800" alt="Diagrama Classes Aluguel de Carros" src="https://github.com/user-attachments/assets/04d36228-a0bd-40b4-b1dc-16f082bd7370" />
+
+---
+
+# Diagrama de Pacotes
+
+<img width="800" alt="Diagrama Pacotes Aluguel de Carros" src="https://github.com/user-attachments/assets/1d9361c6-32c6-497d-8aa5-eb805b344478" />
 
 
