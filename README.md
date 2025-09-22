@@ -128,4 +128,8 @@ Este épico descreve ações realizadas pelo próprio sistema para automatizar t
 
 <img width="800" alt="Diagrama Pacotes Aluguel de Carros" src="https://github.com/user-attachments/assets/1d9361c6-32c6-497d-8aa5-eb805b344478" />
 
+---
 
+# Diagrama de Componentes
+
+[imagem]
