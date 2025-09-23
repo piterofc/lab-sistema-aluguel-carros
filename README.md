@@ -130,7 +130,7 @@ Este épico descreve ações realizadas pelo próprio sistema para automatizar t
 
 ---
 
-# Diagrama de Pacotes de Sistema
+# Diagrama de Componentes do Sistema
 
 <img width="800" alt="Component Diagram000" src="https://github.com/user-attachments/assets/a0c2b2d8-9b3f-48dc-956c-d71cc395fd69" />
 
