@@ -134,3 +134,8 @@ Este épico descreve ações realizadas pelo próprio sistema para automatizar t
 
 <img width="800" alt="Component Diagram000" src="https://github.com/user-attachments/assets/a0c2b2d8-9b3f-48dc-956c-d71cc395fd69" />
 
+---
+
+# Diagrama de Implantação do Sistema
+
+<img width="2481" height="1169" alt="Diagrama de Implantação Aluguel drawio" src="https://github.com/user-attachments/assets/29a5897a-f8e0-491e-9af8-2892527814ac" />
